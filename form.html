@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Опитування</h1>
+    <form method="POST" action="https://formspree.io/turcheniak.oleg@gmail.com">
+        <label for="client-name">Прізвище : </label>
+        <br>
+        <input type="text" name="client-name" id="client-name" required>
+        <br><br>
+        <label for="client-name2">Ім'я : </label>
+        <br>
+        <input type="text" name="client-name2" id="client-name2" required>
+        <br><br>
+        <label for="client-name3">Побатькові : </label>
+        <br>
+        <input type="text" name="client-name3" id="client-name3" required>
+        <br><br>
+        <label for="old">Вік : </label>
+        <br>
+        <input type="number" name="old" id="old" required>
+        <br><br>
+        <label>Стать : </label>
+        <br>
+        <label>
+        <input type="radio" name="client-gender" value="male" checked> Male
+        </label>
+        <label>
+        <input type="radio" name="client-gender" value="female"> Female
+        </label>
+        <label>
+        <input type="radio" name="client-gender" value="other"> Other
+        </label>
+        <br><br>
+        <label>Email Клієнта :</label>
+        <br>
+        <input type="email" name="client-email" required>
+        <br><br>
+        <label>Номер автомобіля клієнта : </label>
+        <br>
+        <input type="text" name="car-plate" pattern="[A-Z]{2}[0-9]{4}[A-Z]{2}" title="AB1234CD" placeholder="AB1234CD" required>
+        <br><br>
+        <label> Марка автомобіля : </label>
+        <br>
+        <select name="cars">
+            <option value="audi">Audi</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="mazda">Mazda</option>
+            <option value="toyota">Toyota</option>
+        </select>
+        <br><br>
+        <label> Пальне  : </label>
+        <br>
+         <select name="fuel">
+            <option value="disel">Дизель</option>
+            <option value="gasoline">Бензин</option>
+            <option value="gas">Газ</option>
+        </select>
+        <br><br>
+        <label for="old-car">Рік автомобіля : </label>
+        <br>
+        <input type="text" name="old-car" id="old-car" pattern="[0-9]{4}" title="2018" placeholder="2018" required>
+        <br><br>
+        <label> Місто : </label>
+        <br>
+            <input list="residence" name="residence">
+            <datalist id="residence">
+                <option value="Львів">
+                <option value="Київ">
+                <option value="Харків">
+                <option value="Одеса">
+                <option value="Рівне">
+            </datalist>
+        <br><br>
+        <label> Коментар клієнта : </label>
+        <br>
+            <textarea name="message" rows="10" cols="30">Залишіть свій коментар</textarea>
+        <br><br>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+    </form>
+</body>
+</html>
